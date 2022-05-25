@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    font: Helvetica, Roboto, Arial, sans-serif;
+	color: #262626;
+}
+/* Cabeçalho*/
+
+header{
+    display:flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 3px solid black;
+    background: rgb(230,4,16);
+    background: linear-gradient(162deg, rgba(230,4,16,1) 35%, rgba(4,4,218,1) 65%);
+}
+.kenzielogo{
+    width:50px
+}
+.kenzielogo img{
+    width: 100%;
+}
+h1{
+   font-size: 15px;
+   font-weight: bold;
+   color: white;
+   align-self: center;
+}
+
+.ifoodlogo{
+    width: 50px;
+}
+
+.ifoodlogo img{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    display:flex;
+    height: 660px;
+    
+}
+
+
+
+
+/* Área pincipal*/
+
+main{
+    width: 100%;
+    background-color: #a20aab;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 300px;
+    width: 99%;
+    flex-direction: column;
+    background-color: lightgray;
+    display: flex;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 5px 3px rgba(222,204,218,0.75);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(222,204,218,0.75);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(222,204,218,0.75);
+    border-radius: 5px;
+    
+}
+
+.box input{
+    height: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    align-self: center;
+}
+
+.box button{
+    height: 40px;
+    width: 200px;
+    align-self: center;
+    background-color: #a20aab;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 2px solid #a20aab;
+    margin-bottom: 30px;
+    
+}
+
+.box button:active{
+    box-shadow: 0px 0px 5px 2px rgba(146,33,148,0.75);    
+}
+
+
+
+h3{
+    align-self: center;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+p{
+  align-self: center;
+  font-size: 15px;
+  font-weight: bold;
+    
+}
+
+
+
+@media screen and (max-width:767px){
+    aside{
+        display:none;
+    }
+    
+ 
+}
+
+@media  screen and (min-width:768px) {
+    header{        
+        height: 100px;        
+    }
+
+    .kenzielogo{
+        width:100px
+    }
+    .kenzielogo img{
+        width: 100%;
+    }
+    h1{
+       font-size: xx-large;       
+    }
+    
+    .ifoodlogo{
+        width: 100px;
+    }
+    
+    .ifoodlogo img{
+        width: 100%;
+    }
+    /* Minhas informações*/    
+    
+    aside{
+        border-right: 3px solid black;
+        background-color: lightgray;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        height: 630px;
+        width: 30%;
+    }
+    
+    .minhafoto {
+        width:100px;
+        
+    }
+    
+    .minhafoto img{
+        width:100%;
+        border-radius: 20px;
+        background: linear-gradient(#FAFAFA,#FAFAFA) padding-box, linear-gradient(170deg, rgba(4,4,218,1) 30%, rgba(230,4,16,1) 64%) border-box;
+            border-width: 2px;
+            border-style: solid;
+            border-color: transparent;
+            padding: 2px;	
+    }
+    
+    h2{
+        font-size: x-large;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    li{
+        margin-bottom: 5px;
+        list-style: none
+    }
+    
+    
+    /* Área pincipal*/
+    
+    main{
+        width: 80%;        
+    }
+    
+    .box{
+        height: 300px;
+        width: 500px;        
+        padding: 20px;       
+    }    
+    
+    .box button:hover{
+            background-color: white ;
+            color: #a20aab;
+            border: 2px solid #a20aab;
+            cursor: pointer;
+    }   
+    
+    p{    
+      font-size: 20px;       
+    }
+}
+
+
